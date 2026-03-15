@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/odest/tntstack/compare/v1.3.2...v1.4.0) (2026-03-15)
+
+
+### Features
+
+* **docs:** add Mermaid support and MDX helpers, update documentation content ([645fe37](https://github.com/odest/tntstack/commit/645fe3778414576e1735f64a0a933c28907d2c4f))
+
 ## [1.3.2](https://github.com/odest/tntstack/compare/v1.3.1...v1.3.2) (2026-03-14)
 
 
