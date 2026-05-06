@@ -36,17 +36,15 @@ export function ProfileDrawer({ user }: ProfileDrawerProps) {
           <DrawerDescription>{user.name}</DrawerDescription>
         </DrawerHeader>
         <div className="flex items-center gap-2 px-2 py-1.5 text-left">
-          <Avatar className="h-(--comp-h-8) w-(--comp-h-8) rounded-lg">
+          <Avatar className="size-8 rounded-lg">
             <AvatarImage src={user.avatar} alt={user.name} />
             <AvatarFallback className="rounded-lg">
               {user.name.slice(0, 2).toUpperCase()}
             </AvatarFallback>
           </Avatar>
-          <div className="grid flex-1 text-left [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+          <div className="grid flex-1 text-left text-sm">
             <span className="truncate font-medium">{user.name}</span>
-            <span className="truncate [font-size:var(--comp-text-xs)] [line-height:var(--comp-lh-xs)]">
-              {user.email}
-            </span>
+            <span className="truncate text-xs">{user.email}</span>
           </div>
         </div>
         <Separator className="bg-border my-1 h-px" />

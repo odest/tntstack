@@ -26,7 +26,7 @@ export function LanguageCard() {
             <div className="flex items-center gap-2 font-semibold">
               {t("title")}
             </div>
-            <div className="text-muted-foreground [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+            <div className="text-muted-foreground text-sm">
               {t("description")}
             </div>
           </div>
@@ -38,9 +38,7 @@ export function LanguageCard() {
             <SelectTrigger className="w-[200px]">
               <SelectValue>
                 <div className="flex items-center gap-2">
-                  <span className="[font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]">
-                    {currentConfig.flag}
-                  </span>
+                  <span className="text-base">{currentConfig.flag}</span>
                   <span>{currentConfig.nativeName}</span>
                 </div>
               </SelectValue>
@@ -57,9 +55,7 @@ export function LanguageCard() {
                     className={cn(isSelected && "bg-accent")}
                   >
                     <div className="flex w-full items-center gap-2">
-                      <span className="[font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]">
-                        {config.flag}
-                      </span>
+                      <span className="text-base">{config.flag}</span>
                       <span>{config.nativeName}</span>
                     </div>
                   </SelectItem>

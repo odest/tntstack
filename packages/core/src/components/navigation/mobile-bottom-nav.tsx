@@ -114,7 +114,7 @@ export function MobileBottomNav({
               custom={isActive}
               transition={transition}
               className={cn(
-                "relative flex h-full items-center justify-center rounded-full px-3.5 [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)] font-medium transition-colors duration-300",
+                "relative flex h-full items-center justify-center rounded-full px-3.5 text-sm font-medium transition-colors duration-300",
                 isActive
                   ? "text-foreground min-w-0"
                   : "text-muted-foreground hover:text-foreground shrink-0",
@@ -153,7 +153,7 @@ export function MobileBottomNav({
                     animate="animate"
                     exit="exit"
                     transition={transition}
-                    className="relative z-10 block min-w-0 truncate [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)] font-semibold"
+                    className="relative z-10 block min-w-0 truncate text-sm font-semibold"
                   >
                     {t(item.translationKey as Parameters<typeof t>[0])}
                   </motion.span>

@@ -117,7 +117,7 @@ export function Footer() {
               <h2 className="text-xl font-bold">{siteConfig.name}</h2>
             </div>
           </Link>
-          <p className="text-muted-foreground mt-4 [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+          <p className="text-muted-foreground mt-4 text-sm">
             {siteConfig.headline}
           </p>
           <ModeSwitch />
@@ -127,10 +127,8 @@ export function Footer() {
           {footerLinks.map((section, index) => (
             <AnimatedContainer delay={0.1 + index * 0.1} key={section.label}>
               <div className="mb-10 md:mb-0">
-                <h3 className="[font-size:var(--comp-text-xs)] [line-height:var(--comp-lh-xs)]">
-                  {section.label}
-                </h3>
-                <ul className="text-muted-foreground mt-4 space-y-2 [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+                <h3 className="text-xs">{section.label}</h3>
+                <ul className="text-muted-foreground mt-4 space-y-2 text-sm">
                   {section.links.map((link) => (
                     <li key={link.title}>
                       <Link

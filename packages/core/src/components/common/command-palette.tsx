@@ -70,7 +70,7 @@ function CommandMenuItem({
   return (
     <CommandItem
       className={cn(
-        "data-[selected=true]:border-input data-[selected=true]:bg-input/50 h-(--comp-h-9) rounded-md border border-transparent px-3! font-medium",
+        "data-[selected=true]:border-input data-[selected=true]:bg-input/50 h-9 rounded-md border border-transparent px-3! font-medium",
         className,
       )}
       {...props}
@@ -138,7 +138,7 @@ export function CommandPalette({
     <>
       <Command
         className={cn(
-          "**:data-[slot=command-input-wrapper]:border-input **:data-[slot=command-input-wrapper]:bg-input/50 rounded-none bg-transparent p-2 **:data-[slot=command-input]:h-(--comp-h-9)! **:data-[slot=command-input]:py-0 **:data-[slot=command-input-wrapper]:mb-0 **:data-[slot=command-input-wrapper]:h-(--comp-h-9)! **:data-[slot=command-input-wrapper]:rounded-md **:data-[slot=command-input-wrapper]:border",
+          "**:data-[slot=command-input-wrapper]:border-input **:data-[slot=command-input-wrapper]:bg-input/50 rounded-none bg-transparent p-2 **:data-[slot=command-input]:h-9! **:data-[slot=command-input]:py-0 **:data-[slot=command-input-wrapper]:mb-0 **:data-[slot=command-input-wrapper]:h-9! **:data-[slot=command-input-wrapper]:rounded-md **:data-[slot=command-input-wrapper]:border",
           isMobile && "h-full",
         )}
       >
@@ -149,7 +149,7 @@ export function CommandPalette({
             isMobile ? "max-h-none min-h-0 flex-1" : "min-h-80",
           )}
         >
-          <CommandEmpty className="text-muted-foreground py-12 text-center [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+          <CommandEmpty className="text-muted-foreground py-12 text-center text-sm">
             {t("noResults")}
           </CommandEmpty>
 
@@ -253,9 +253,7 @@ export function CommandPalette({
                   onSelect={() => runCommand(() => changeLanguage(loc))}
                   disabled={isPending}
                 >
-                  <span className="mr-2 [font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]">
-                    {config.flag}
-                  </span>
+                  <span className="mr-2 text-base">{config.flag}</span>
                   <span>{config.nativeName}</span>
                   {locale === loc && <Check className="ml-auto h-4 w-4" />}
                 </CommandMenuItem>
@@ -324,7 +322,7 @@ export function CommandPalette({
         </CommandList>
       </Command>
 
-      <div className="border-border bg-muted/50 text-muted-foreground absolute inset-x-0 bottom-0 z-20 hidden h-(--comp-h-10) items-center justify-between rounded-b-xl border-t px-4 [font-size:var(--comp-text-xs)] [line-height:var(--comp-lh-xs)] font-medium md:flex">
+      <div className="border-border bg-muted/50 text-muted-foreground absolute inset-x-0 bottom-0 z-20 hidden h-10 items-center justify-between rounded-b-xl border-t px-4 text-xs font-medium md:flex">
         <div className="flex items-center gap-2">
           <Kbd>
             <MoveUp />

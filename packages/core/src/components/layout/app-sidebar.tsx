@@ -63,7 +63,7 @@ export function AppSidebar({
             >
               <LinkComponent href="/" onClick={handleLinkClick}>
                 <Logo className="!size-5" />
-                <span className="[font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)] font-semibold">
+                <span className="text-base font-semibold">
                   {siteConfig.name}
                 </span>
               </LinkComponent>

@@ -14,12 +14,12 @@ export const SettingsCardSkeleton = ({
     <Card>
       <CardHeader className="flex flex-row items-center justify-between gap-4 space-y-0">
         <div className="w-full space-y-2">
-          <Skeleton className="h-(--comp-h-6) w-24" />
+          <Skeleton className="h-6 w-24" />
           <Skeleton className="h-4 w-48 max-w-full" />
         </div>
 
         <div className="shrink-0 md:hidden">
-          <Skeleton className="h-(--comp-h-9) w-[130px] rounded-md" />
+          <Skeleton className="h-9 w-[130px] rounded-md" />
         </div>
       </CardHeader>
 

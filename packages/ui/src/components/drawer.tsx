@@ -102,10 +102,7 @@ function DrawerTitle({
   return (
     <DrawerPrimitive.Title
       data-slot="drawer-title"
-      className={cn(
-        "text-foreground [font-size:var(--comp-text-lg)] [line-height:var(--comp-lh-lg)] font-semibold",
-        className,
-      )}
+      className={cn("text-foreground font-semibold", className)}
       {...props}
     />
   );
@@ -118,10 +115,7 @@ function DrawerDescription({
   return (
     <DrawerPrimitive.Description
       data-slot="drawer-description"
-      className={cn(
-        "text-muted-foreground [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]",
-        className,
-      )}
+      className={cn("text-muted-foreground text-sm", className)}
       {...props}
     />
   );

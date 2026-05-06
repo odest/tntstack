@@ -52,7 +52,7 @@ export function ThemeCard({ themeLabel, themeName, palette }: ThemeCardProps) {
                 "pointer-events-none -rotate-90 tracking-wider whitespace-nowrap",
               )}
             >
-              <span className="rounded-md bg-black/50 px-2 py-0.5 [font-size:var(--comp-text-xs)] [line-height:var(--comp-lh-xs)] font-medium text-white shadow-xs backdrop-blur-sm">
+              <span className="rounded-md bg-black/50 px-2 py-0.5 text-xs font-medium text-white shadow-xs backdrop-blur-sm">
                 {swatch.name}
               </span>
             </div>
@@ -63,7 +63,7 @@ export function ThemeCard({ themeLabel, themeName, palette }: ThemeCardProps) {
       <Button
         onClick={() => setSelectedTheme(themeName)}
         className={cn(
-          "mt-1 h-(--comp-h-12) w-full border [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)] font-medium",
+          "mt-1 h-12 w-full border text-sm font-medium",
           selectedTheme === themeName
             ? "bg-primary text-primary-foreground"
             : "bg-background text-foreground",

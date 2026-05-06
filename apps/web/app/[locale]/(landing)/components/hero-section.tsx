@@ -130,7 +130,7 @@ export default function HeroSection() {
                   rel="noopener noreferrer"
                   className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                 >
-                  <span className="text-foreground [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+                  <span className="text-foreground text-sm">
                     {siteConfig.name} v{latestTag} Released
                   </span>
                   <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
@@ -162,7 +162,7 @@ export default function HeroSection() {
                 speedSegment={0.3}
                 delay={0.5}
                 as="p"
-                className="mx-auto mt-8 max-w-3xl [font-size:var(--comp-text-lg)] [line-height:var(--comp-lh-lg)] text-balance"
+                className="mx-auto mt-8 max-w-3xl text-lg text-balance"
               >
                 {siteConfig.description}
               </TextEffect>
@@ -181,11 +181,7 @@ export default function HeroSection() {
                 }}
                 className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
               >
-                <Button
-                  asChild
-                  size="lg"
-                  className="cursor-pointer [font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]"
-                >
+                <Button asChild size="lg" className="cursor-pointer text-base">
                   <Link href="/home">
                     <Play />
                     <span className="text-nowrap">View Web Demo</span>
@@ -196,7 +192,7 @@ export default function HeroSection() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="cursor-pointer [font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]"
+                  className="cursor-pointer text-base"
                 >
                   <Link href="/docs/quick-start">
                     <Rocket />

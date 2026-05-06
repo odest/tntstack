@@ -100,7 +100,7 @@ export const ModeCard = () => {
             >
               <div className="relative w-full">
                 <div className="border-border dark:border-muted-foreground bg-background dark:bg-foreground aspect-video w-full overflow-hidden rounded-lg border-2 transition-colors">
-                  <div className="border-border dark:border-muted-foreground bg-muted dark:bg-muted-foreground/30 h-(--comp-h-5) border-b"></div>
+                  <div className="border-border dark:border-muted-foreground bg-muted dark:bg-muted-foreground/30 h-5 border-b"></div>
                   <div className="mt-2 space-y-1 p-2">
                     <div className="bg-muted-foreground/20 dark:bg-muted/30 h-2 w-3/4 rounded"></div>
                     <div className="bg-muted-foreground/20 dark:bg-muted/30 h-2 w-1/2 rounded"></div>
@@ -129,7 +129,7 @@ export const ModeCard = () => {
             <label htmlFor="theme-dark" className="block w-full cursor-pointer">
               <div className="relative w-full">
                 <div className="border-muted-foreground dark:border-border bg-foreground dark:bg-background aspect-video w-full overflow-hidden rounded-lg border-2 transition-colors">
-                  <div className="dark:border-border border-muted-foreground bg-muted-foreground/30 dark:bg-muted h-(--comp-h-5) border-b"></div>
+                  <div className="dark:border-border border-muted-foreground bg-muted-foreground/30 dark:bg-muted h-5 border-b"></div>
                   <div className="mt-2 space-y-1 p-2">
                     <div className="bg-muted/30 dark:bg-muted-foreground/20 h-2 w-3/4 rounded"></div>
                     <div className="bg-muted/30 dark:bg-muted-foreground/20 h-2 w-1/2 rounded"></div>
@@ -165,7 +165,7 @@ export const ModeCard = () => {
                   <div className="border-muted-foreground dark:border-border bg-foreground dark:bg-background absolute inset-0 left-1/2 w-1/2 rounded-tr-lg rounded-br-lg border-2 border-l" />
 
                   <div className="relative">
-                    <div className="flex h-(--comp-h-5)">
+                    <div className="flex h-5">
                       <div className="border-border dark:border-muted-foreground bg-muted dark:bg-muted/30 w-1/2 rounded-tl-lg border-2 border-r"></div>
                       <div className="border-muted-foreground dark:border-border bg-muted/30 dark:bg-muted w-1/2 rounded-tr-lg border-2 border-l"></div>
                     </div>

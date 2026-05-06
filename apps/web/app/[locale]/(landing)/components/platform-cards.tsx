@@ -29,17 +29,13 @@ function DownloadButton({
       variant="outline"
       className="w-full cursor-pointer justify-between"
     >
-      <Link 
-        href={href} 
-        target={isExternal ? "_blank" : undefined} 
+      <Link
+        href={href}
+        target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
       >
-        <span className="[font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
-          {label}
-        </span>
-        <span className="text-muted-foreground font-mono [font-size:var(--comp-text-xs)] [line-height:var(--comp-lh-xs)]">
-          {ext}
-        </span>
+        <span className="text-sm">{label}</span>
+        <span className="text-muted-foreground font-mono text-xs">{ext}</span>
       </Link>
     </Button>
   );
@@ -70,15 +66,17 @@ function PlatformCard({
           platform.downloads.map((dl) => (
             <DownloadButton
               key={dl.assetKey + dl.label}
-              href={dl.assetKey.startsWith("http") ? dl.assetKey : assets[dl.assetKey]}
+              href={
+                dl.assetKey.startsWith("http")
+                  ? dl.assetKey
+                  : assets[dl.assetKey]
+              }
               label={dl.label}
               ext={dl.ext}
             />
           ))
         ) : (
-          <p className="text-muted-foreground py-2 [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
-            Coming soon
-          </p>
+          <p className="text-muted-foreground py-2 text-sm">Coming soon</p>
         )}
       </CardContent>
     </Card>
@@ -118,7 +116,7 @@ const CardDecorator = ({ children }: { children: ReactNode }) => (
       className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-size-[24px_24px] dark:opacity-50"
     />
 
-    <div className="bg-background absolute inset-0 m-auto flex size-(--comp-h-12) items-center justify-center border-t border-l">
+    <div className="bg-background absolute inset-0 m-auto flex size-12 items-center justify-center border-t border-l">
       {children}
     </div>
   </div>

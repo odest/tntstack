@@ -107,7 +107,7 @@ export default function DownloadContent({ release }: DownloadContentProps) {
             speedSegment={0.3}
             delay={0.5}
             as="p"
-            className="mx-auto mt-8 max-w-3xl [font-size:var(--comp-text-lg)] [line-height:var(--comp-lh-lg)] text-balance"
+            className="mx-auto mt-8 max-w-3xl text-lg text-balance"
           >
             Get the latest version for your platform. One codebase for Web,
             Desktop, and Mobile.
@@ -115,7 +115,7 @@ export default function DownloadContent({ release }: DownloadContentProps) {
 
           {release?.version && (
             <AnimatedGroup variants={transitionVariants}>
-              <p className="text-muted-foreground mt-4 [font-size:var(--comp-text-sm)] [line-height:var(--comp-lh-sm)]">
+              <p className="text-muted-foreground mt-4 text-sm">
                 Latest release: v{release.version}
               </p>
             </AnimatedGroup>
@@ -135,11 +135,7 @@ export default function DownloadContent({ release }: DownloadContentProps) {
             }}
             className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
           >
-            <Button
-              asChild
-              size="lg"
-              className="cursor-pointer [font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]"
-            >
+            <Button asChild size="lg" className="cursor-pointer text-base">
               <Link href={primaryUrl}>
                 {icon}
                 <span className="text-nowrap">{label}</span>
@@ -149,7 +145,7 @@ export default function DownloadContent({ release }: DownloadContentProps) {
               key={2}
               size="lg"
               variant="outline"
-              className="cursor-pointer [font-size:var(--comp-text-base)] [line-height:var(--comp-lh-base)]"
+              className="cursor-pointer text-base"
               onClick={scrollToPlatforms}
             >
               <ArrowDown />

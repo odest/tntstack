@@ -101,7 +101,7 @@ export const SidebarVariantCard = () => {
             >
               <div className="relative w-full">
                 <div className="border-border bg-background aspect-video overflow-hidden rounded-lg border-2 transition-colors">
-                  <div className="bg-muted h-(--comp-h-5) border-b"></div>
+                  <div className="bg-muted h-5 border-b"></div>
                   <div className="absolute top-2 left-2 flex gap-1">
                     <div className="h-2 w-2 rounded-full bg-red-500"></div>
                     <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
@@ -153,7 +153,7 @@ export const SidebarVariantCard = () => {
             >
               <div className="relative w-full">
                 <div className="border-border bg-background aspect-video overflow-hidden rounded-lg border-2 transition-colors">
-                  <div className="bg-muted h-(--comp-h-5) border-b"></div>
+                  <div className="bg-muted h-5 border-b"></div>
                   <div className="absolute top-2 left-2 flex gap-1">
                     <div className="h-2 w-2 rounded-full bg-red-500"></div>
                     <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
@@ -205,7 +205,7 @@ export const SidebarVariantCard = () => {
             >
               <div className="relative w-full">
                 <div className="border-border bg-muted aspect-video overflow-hidden rounded-lg border-2 transition-colors">
-                  <div className="bg-muted h-(--comp-h-5) border-b"></div>
+                  <div className="bg-muted h-5 border-b"></div>
                   <div className="absolute top-2 left-2 flex gap-1">
                     <div className="h-2 w-2 rounded-full bg-red-500"></div>
                     <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
